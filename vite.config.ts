@@ -5,7 +5,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   
-  // 👇 REQUIRED for GitHub Pages
+  // 👇
   base: '/beneficiary-dashboard/',
 
   resolve: {
