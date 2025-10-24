@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/beneficiary-dashboard/',   // 👈 ADD THIS LINE (required for GitHub Pages)
+  base: '/beneficiary-dashboard/',  
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
@@ -51,7 +51,7 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    outDir: 'build', // ✅ You can keep 'build' or switch to 'dist'; GitHub Actions will handle it.
+    outDir: 'build',
   },
   server: {
     port: 3000,
