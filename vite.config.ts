@@ -4,7 +4,10 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/beneficiary-dashboard/',  
+  
+  // 👇 REQUIRED for GitHub Pages
+  base: '/beneficiary-dashboard/',
+
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     alias: {
@@ -49,10 +52,12 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+
   build: {
     target: 'esnext',
-    outDir: 'build',
+    outDir: 'build', // 👈 Matches your workflow
   },
+
   server: {
     port: 3000,
     open: true,
